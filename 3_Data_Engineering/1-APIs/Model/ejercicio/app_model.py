@@ -1,11 +1,14 @@
-from flask import Flask, request, jsonify
+from fastapi import FastAPI, HTTPException
+import uvicorn
 import os
 import pickle
-# from sklearn.model_selection import cross_val_score
-# import pandas as pd
+import pandas as pd
+import sqlite3
 
+# 1. Endpoint de predicción
 
+# 2. Endpoint de ingesta de datos
 
-# 1. Endpoint que devuelva la predicción de los nuevos datos enviados mediante argumentos en la llamada
+# 2. Endpoint de reentramiento del modelo
 
 
