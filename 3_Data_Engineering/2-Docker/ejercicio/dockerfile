@@ -1,0 +1,17 @@
+# Utilizar una imagen de Python oficial
+FROM python:3.11-slim
+
+# Establecer directorio trabajo del contenedor
+WORKDIR /app
+
+# Copiamos los archivos al directorio del contenedor
+COPY . /app
+
+# Instalar las dependencias (librerías para ser ejectuada la app)
+RUN pip install -r requirements.txt
+
+# Exponer el puerto en el que la aplicación está corriendo
+EXPOSE 8000
+
+# Comando para ejecutar la aplicación
+CMD ["python", "app_model.py"]
